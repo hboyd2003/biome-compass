@@ -76,9 +76,9 @@ public class BiomeSelectionGui {
                     .setItem(biomeItem)
                     .setName(biomeName)
                     .setLore(new ArrayList<>(List.of(
-                            Text.translatable("gui.biomecompass.biome_compass.identifier", biomeId).formatted(Formatting.GRAY),
-                            Text.translatable("gui.biomecompass.biome_compass.warmth", biome.getTemperature()).formatted(Formatting.GRAY),
-                            Text.translatable("gui.biomecompass.biome_compass.precipitation", biome.getPrecipitation(BlockPos.ORIGIN)).formatted(Formatting.GRAY)
+                            Text.translatable("gui.biomecompass.biome_compass.identifier", biomeId.toString()).formatted(Formatting.GRAY),
+                            Text.translatable("gui.biomecompass.biome_compass.warmth", String.valueOf(biome.getTemperature())).formatted(Formatting.GRAY),
+                            Text.translatable("gui.biomecompass.biome_compass.precipitation", biome.getPrecipitation(BlockPos.ORIGIN).toString()).formatted(Formatting.GRAY)
                     )))
                     .setCallback((index, type, action) -> {
                         gui.close();

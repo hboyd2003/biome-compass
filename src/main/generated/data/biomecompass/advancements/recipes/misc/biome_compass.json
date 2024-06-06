@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_compass",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_compass"
     ]
   ],
   "rewards": {
     "recipes": [
       "biomecompass:biome_compass"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

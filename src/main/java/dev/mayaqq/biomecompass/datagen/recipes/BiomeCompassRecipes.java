@@ -3,7 +3,7 @@ package dev.mayaqq.biomecompass.datagen.recipes;
 import dev.mayaqq.biomecompass.registry.BiomeCompassItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -20,7 +20,7 @@ public class BiomeCompassRecipes extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
 
         TagKey<Item> saplings = TagKey.of(Registries.ITEM.getKey(), mcId("saplings"));
         TagKey<Item> logs = TagKey.of(Registries.ITEM.getKey(), mcId("logs"));

@@ -1,40 +1,41 @@
 {
-  "schemaVersion": 1,
-  "id": "biomecompass",
-  "version": "${version}",
-  "name": "Biome Compass",
-  "description": "Like Nature's Compass, but server-side!",
-  "authors": [
-    "Mayaqq"
-  ],
-  "contributors": [
-    "unilock",
-    "800020h"
-  ],
-  "contact": {
-    "sources": "https://github.com/MayaqqDev/biome-compass"
-  },
-  "license": "LGPL-3.0",
-  "icon": "assets/biomecompass/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "dev.mayaqq.biomecompass.BiomeCompass"
-    ],
-    "fabric-datagen": [
-        "dev.mayaqq.biomecompass.datagen.BiomeCompassDatagen"
-    ]
-  },
-  "depends": {
-    "fabricloader": "*",
-    "fabric-api": "*",
-    "minecraft": ">=${minecraft_version}"
-  },
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.gg/w7PpGax9Bq"
-      }
-    }
-  }
+	"schemaVersion": 1,
+	"id": "biomecompass",
+	"version": "${version}",
+	"name": "Biome Compass",
+	"description": "Like Nature's Compass, but server-side!",
+	"authors": [
+		"Mayaqq"
+	],
+	"contributors": [
+		"unilock",
+		"800020h"
+	],
+	"contact": {
+		"sources": "https://github.com/MayaqqDev/biome-compass"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/biomecompass/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.mayaqq.biomecompass.BiomeCompass"
+		],
+		"fabric-datagen": [
+			"dev.mayaqq.biomecompass.datagen.BiomeCompassDatagen"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/w7PpGax9Bq"
+			}
+		}
+	}
 }
