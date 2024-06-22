@@ -4,20 +4,17 @@ import dev.mayaqq.biomecompass.BiomeCompass;
 import dev.mayaqq.biomecompass.item.BiomeCompassItem;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 
 public class BiomeCompassItems {
     public static ItemGroup ITEM_GROUP;
 
-    public static final Item BIOME_COMPASS = register("biome_compass", new BiomeCompassItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BIOME_COMPASS = register("biome_compass", new BiomeCompassItem(new Item.Settings().maxCount(1)));
 
     public static void register() {
         ITEM_GROUP = FabricItemGroup.builder()

@@ -18,6 +18,7 @@
     "#0#"
   ],
   "result": {
-    "item": "biomecompass:biome_compass"
+    "id": "biomecompass:biome_compass",
+    "count": 1
   }
 }

@@ -9,14 +9,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
-import java.util.function.Consumer;
+import java.util.concurrent.CompletableFuture;
 
 public class BiomeCompassRecipes extends FabricRecipeProvider {
-    public BiomeCompassRecipes(FabricDataOutput output) {
-        super(output);
+    public BiomeCompassRecipes(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
     @Override
